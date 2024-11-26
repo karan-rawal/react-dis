@@ -1,1 +1,2 @@
-export { PrimaryButton } from "./PrimaryButton.component";
+export { SolidButton } from "./SolidButton";
+export { OutlinedButton } from './OutlinedButton.component';

@@ -1,17 +1,22 @@
-import { PrimaryButton } from "./components/buttons"
-import { SecondaryButton } from "./components/buttons/SecondaryButton.component"
+import styled from "styled-components"
+import { SolidButton } from "./components/buttons"
+import { OutlinedButton } from "./components/buttons"
+
+const CustomSolidButton = styled(SolidButton)`
+  background-color: green;
+`;
 
 function App() {
   return (
     <>
       <div>
-        <PrimaryButton label='Primary Button' onClick={() => {
+        <SolidButton label='Solid Button' onClick={() => {
           alert("Clicked")
         }} />
-        &nbsp;
-        &nbsp;
-        &nbsp; 
-        <SecondaryButton label='Primary Button' onClick={() => {
+        <CustomSolidButton label='Cutom Solid Button' onClick={() => {
+          alert("Clicked")
+        }} />
+        <OutlinedButton label='Outlined Button' onClick={() => {
           alert("Clicked")
         }} />
       </div>
