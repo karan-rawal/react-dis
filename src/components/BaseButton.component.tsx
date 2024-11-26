@@ -1,4 +1,9 @@
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledButton = styled.button`
+    background-color: red;
+`;
 
 export interface IBaseButtonProps {
     label: string;
@@ -10,9 +15,9 @@ const BaseButton: React.FC<IBaseButtonProps> = ({
     onClick,
 }) => {
     return (
-        <button onClick={onClick}>
+        <StyledButton onClick={onClick}>
             {label}
-        </button>
+        </StyledButton>
     );
 }
  
