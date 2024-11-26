@@ -1,12 +1,12 @@
-import { useState } from 'react'
+import BaseButton from './components/BaseButton.component'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <div>
-        App Component
+        <BaseButton label='Click me' onClick={() => {
+          alert("Clicked")
+        }} />
       </div>
     </>
   )
